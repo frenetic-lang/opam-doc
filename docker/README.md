@@ -24,10 +24,10 @@ Configure GitHub and Build Container
 
   https://github.com/settings/ssh
 
-- `make`
-
 - Edit the `REPO` and `OPAMDOC_BASE_URI` variables in `entrypoint.sh` to reflect
   the GitHub Pages repository you chose above.
+
+- `make`
 
 Build and Deploy Documentation (Manual)
 =========================================
