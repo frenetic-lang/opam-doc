@@ -48,11 +48,15 @@ pushes them to a documentation repository.
 
 - Build the server
       
-      $ sbt assembly
+  ```
+  $ sbt assembly
+  ```
 
 - Copy the server library to the server:
 
-      $ scp target/scala-2.10/docs-assembly-0.1-SNAPSHOT.jar ...
+  ```
+  $ scp target/scala-2.10/docs-assembly-0.1-SNAPSHOT.jar ...
+  ```
 
 - Install a Java runtime on the server.
 
@@ -64,7 +68,9 @@ pushes them to a documentation repository.
 
 - Start the server:
 
-      $ java docs-assembly-0.1-SNAPSHOT.jar settings.conf
+  ```
+  $ java docs-assembly-0.1-SNAPSHOT.jar settings.conf
+  ```
 
 - Configure Github a Github hook to post to `SERVER-URL/github-hook`. Detailed
   settings are unimportant. The system rebuilds on any post, at most once
