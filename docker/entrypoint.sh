@@ -11,5 +11,7 @@ git clone $(REPO)
 cd arjunguha.github.io
 rsync -av --delete --exclude=".git" /home/frenetic/.opam/doc/doc/ .
 git add --all
-git commit -am "($date)"
+
+DATE=`date`
+git commit -am "$DATE"
 git push
